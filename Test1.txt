@@ -1,1 +1,13 @@
-THIS IS A COOL TEST
+import psutil
+
+def check_ram_threshold(threshold=10):
+    memory = psutil.virtual_memory()
+    available_percent = (memory.available / memory.total) * 100
+    
+    if available_percent < threshold:
+        print(f"Warnung: Verfügbarer RAM ist unter {threshold}% ({available_percent:.2f}%)!")
+    else:
+        print(f"RAM-Verfügbarkeit ist ausreichend: {available_percent:.2f}% verfügbar.")
+
+if __name__ == "__main__":
+    check_ram_threshold()
