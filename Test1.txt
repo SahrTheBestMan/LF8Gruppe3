@@ -8,6 +8,6 @@ def check_ram_threshold(threshold=10):
         print(f"Warnung: Verfügbarer RAM ist unter {threshold}% ({available_percent:.2f}%)!")
     else:
         print(f"RAM-Verfügbarkeit ist ausreichend: {available_percent:.2f}% verfügbar.")
-
+#KOMMENTWR
 if __name__ == "__main__":
     check_ram_threshold()
