@@ -1,0 +1,31 @@
+name: Python CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main  # Auslösen bei Push auf main-Branch
+  pull_request:
+    branches:
+      - main  # Auslösen bei PRs auf main-Branch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # Ubuntu-Umgebung, kann auch Windows sein
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+
+    - name: Install dependencies
+      run: |
+        pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run tests
+      run: |
+        pytest  # Führt Unit-Tests aus
