@@ -1,0 +1,6 @@
+keyboard==0.13.5
+mysql-connector==2.2.9
+mysql-connector-python==9.0.0
+psutil==7.0.0
+pygame==2.6.1
+setuptools==75.1.0

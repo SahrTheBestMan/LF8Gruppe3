@@ -1,20 +1,19 @@
-import pytest
-import psutil
-from RAM_Code import check_memory_usage
+import unittest
+from monitoring.ram_code import get_memory_usage, get_disk_usage, get_process_count
 
-# Mock für psutil.virtual_memory()
-class MockMemory:
-    def __init__(self, percent):
-        self.percent = percent
+class TestSystemMonitoring(unittest.TestCase):
+    
+    def test_get_memory_usage(self):
+        result = get_memory_usage()
+        self.assertTrue(0 <= result <= 100, f"Speicherverbrauch sollte zwischen 0 und 100% liegen, aber es ist {result}%")
+    
+    def test_get_disk_usage(self):
+        result = get_disk_usage()
+        self.assertTrue(0 <= result <= 100, f"Plattenverbrauch sollte zwischen 0 und 100% liegen, aber es ist {result}%")
+    
+    def test_get_process_count(self):
+        result = get_process_count()
+        self.assertGreater(result, 0, "Es gibt keine laufenden Prozesse.")
 
-def test_check_memory_usage_softlimit_warning():
-    # Simuliere 85% RAM-Nutzung (über Softlimit)
-    psutil.virtual_memory = lambda: MockMemory(85)
-    check_memory_usage(soft_limit=80, hard_limit=90)
-    # Hier solltest du prüfen, ob eine Warnung in der Logdatei erstellt wurde.
-
-def test_check_memory_usage_hardlimit_alarm():
-    # Simuliere 95% RAM-Nutzung (über Hardlimit)
-    psutil.virtual_memory = lambda: MockMemory(95)
-    check_memory_usage(soft_limit=80, hard_limit=90)
-    # Hier solltest du prüfen, ob eine E-Mail gesendet wurde.
+if __name__ == "__main__":
+    unittest.main()
