@@ -1,0 +1,5 @@
+- name: Check coverage
+  run: |
+    python -m pytest --cov=monitoring --cov-fail-under=80  # Blockiert bei <80% Coverage- name: Check coverage
+  run: |
+    python -m pytest --cov=monitoring --cov-fail-under=80  # Blockiert bei <80% Coverage

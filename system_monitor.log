@@ -19,3 +19,4 @@
 2025-04-03 12:30:57,866 - INFO - E-Mail gesendet: Warnung: RAM >50%
 2025-04-03 12:30:59,265 - INFO - E-Mail gesendet: Warnung: Festplatte >61%
 2025-04-03 13:25:29,750 - ERROR - E-Mail Fehler: [WinError 10060] Ein Verbindungsversuch ist fehlgeschlagen, da die Gegenstelle nach einer bestimmten Zeitspanne nicht richtig reagiert hat, oder die hergestellte Verbindung war fehlerhaft, da der verbundene Host nicht reagiert hat
+2025-04-03 15:10:45,205 - ERROR - E-Mail Fehler: [WinError 10060] Ein Verbindungsversuch ist fehlgeschlagen, da die Gegenstelle nach einer bestimmten Zeitspanne nicht richtig reagiert hat, oder die hergestellte Verbindung war fehlerhaft, da der verbundene Host nicht reagiert hat
