@@ -36,7 +36,7 @@ def check_threshold(value, name):
     thresholds = {
         "CPU": {"soft": 80, "hard": 95},
         "RAM": {"soft": 75, "hard": 90},
-        "Festplatte": {"soft": 61, "hard": 80}  # WICHTIG: Hier geändert!
+        "Festplatte": {"soft": 61, "hard": 80}
     }
     
     soft = thresholds[name]["soft"]
