@@ -3,7 +3,7 @@ from monitoring.cpu_monitor import get_cpu_usage
 from monitoring.alert import check_threshold
 from datetime import datetime
 
-LOG_FILE = "requirements.txt"  # Speichert die Werte
+LOG_FILE = "requirements.txt"  # Speichert die Werte in requiremnts
 
 def save_results(cpu, ram, disk):
     """Speichert die aktuellen Werte mit Datum in requirements.txt"""
