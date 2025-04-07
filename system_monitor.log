@@ -1,0 +1,28 @@
+2025-04-03 11:30:27,255 - ERROR - E-Mail Fehler: [WinError 10060] Ein Verbindungsversuch ist fehlgeschlagen, da die Gegenstelle nach einer bestimmten Zeitspanne nicht richtig reagiert hat, oder die hergestellte Verbindung war fehlerhaft, da der verbundene Host nicht reagiert hat
+2025-04-03 11:35:54,118 - ERROR - E-Mail Fehler: [WinError 10060] Ein Verbindungsversuch ist fehlgeschlagen, da die Gegenstelle nach einer bestimmten Zeitspanne nicht richtig reagiert hat, oder die hergestellte Verbindung war fehlerhaft, da der verbundene Host nicht reagiert hat
+2025-04-03 11:37:58,235 - ERROR - E-Mail Fehler: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1010)
+2025-04-03 11:42:06,934 - ERROR - E-Mail Fehler: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 4fb4d7f45d1cf-5f087714d0dsm690187a12.16 - gsmtp')
+2025-04-03 11:44:23,622 - ERROR - E-Mail Fehler: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a640c23a62f3a-ac7c013f80dsm64806066b.119 - gsmtp')
+2025-04-03 11:45:44,685 - ERROR - E-Mail Fehler: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a640c23a62f3a-ac7c013f34dsm64776466b.87 - gsmtp')
+2025-04-03 11:51:34,201 - ERROR - E-Mail Fehler: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 4fb4d7f45d1cf-5f0880a535fsm699801a12.80 - gsmtp')
+2025-04-03 11:59:53,235 - ERROR - E-Mail Fehler: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a640c23a62f3a-ac7bfee2591sm66743966b.79 - gsmtp')
+2025-04-03 12:00:29,428 - ERROR - E-Mail Fehler: (535, b'Authentication credentials invalid')
+2025-04-03 12:04:40,548 - ERROR - E-Mail Fehler: (535, b'Authentication credentials invalid')
+2025-04-03 12:06:45,046 - ERROR - E-Mail Fehler: (535, b'Authentication credentials invalid')
+2025-04-03 12:09:19,789 - INFO - E-Mail gesendet: Warnung: Festplatte >61%
+2025-04-03 12:13:00,763 - INFO - E-Mail gesendet: Warnung: Festplatte >61%
+2025-04-03 12:13:56,923 - INFO - E-Mail gesendet: Warnung: Festplatte >61%
+2025-04-03 12:16:30,231 - ERROR - E-Mail Fehler: 'list' object has no attribute 'encode'
+2025-04-03 12:18:03,572 - ERROR - E-Mail Fehler: (535, b'Authentication credentials invalid')
+2025-04-03 12:19:05,882 - INFO - E-Mail gesendet: Warnung: Festplatte >61%
+2025-04-03 12:20:52,483 - INFO - E-Mail gesendet: Warnung: Festplatte >61%
+2025-04-03 12:30:57,866 - INFO - E-Mail gesendet: Warnung: RAM >50%
+2025-04-03 12:30:59,265 - INFO - E-Mail gesendet: Warnung: Festplatte >61%
+2025-04-03 13:25:29,750 - ERROR - E-Mail Fehler: [WinError 10060] Ein Verbindungsversuch ist fehlgeschlagen, da die Gegenstelle nach einer bestimmten Zeitspanne nicht richtig reagiert hat, oder die hergestellte Verbindung war fehlerhaft, da der verbundene Host nicht reagiert hat
+2025-04-03 15:10:45,205 - ERROR - E-Mail Fehler: [WinError 10060] Ein Verbindungsversuch ist fehlgeschlagen, da die Gegenstelle nach einer bestimmten Zeitspanne nicht richtig reagiert hat, oder die hergestellte Verbindung war fehlerhaft, da der verbundene Host nicht reagiert hat
+2025-04-07 10:06:36,036 - ERROR - E-Mail Fehler: [WinError 10060] Ein Verbindungsversuch ist fehlgeschlagen, da die Gegenstelle nach einer bestimmten Zeitspanne nicht richtig reagiert hat, oder die hergestellte Verbindung war fehlerhaft, da der verbundene Host nicht reagiert hat
+2025-04-07 10:07:18,120 - ERROR - E-Mail Fehler: [WinError 10060] Ein Verbindungsversuch ist fehlgeschlagen, da die Gegenstelle nach einer bestimmten Zeitspanne nicht richtig reagiert hat, oder die hergestellte Verbindung war fehlerhaft, da der verbundene Host nicht reagiert hat
+2025-04-07 10:09:31,973 - INFO - E-Mail gesendet: Warnung: Festplatte >61%
+2025-04-07 11:18:47,973 - ERROR - E-Mail Fehler: [WinError 10060] Ein Verbindungsversuch ist fehlgeschlagen, da die Gegenstelle nach einer bestimmten Zeitspanne nicht richtig reagiert hat, oder die hergestellte Verbindung war fehlerhaft, da der verbundene Host nicht reagiert hat
+2025-04-07 12:07:15,883 - INFO - E-Mail gesendet: Warnung: Festplatte >61%
+2025-04-07 12:12:52,199 - INFO - E-Mail gesendet: Warnung: Festplatte >61%
