@@ -13,23 +13,27 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Set up Python
+    - name: Set up Python 3.12
       uses: actions/setup-python@v5
       with:
         python-version: '3.12'
+        cache: 'pip'  # Cache für schnellere Installationen
 
-    - name: Filter requirements.txt to remove invalid lines
+    - name: Create clean requirements.txt
       run: |
-        # Filter out lines that don't look like valid package names
-        grep -vE '^\d{4}-\d{2}-\d{2}' requirements.txt > filtered_requirements.txt
-        cat filtered_requirements.txt  # Debugging: show the filtered contents
+        # Lösche alle Zeilen die keine Python-Pakete sind (behält nur Zeilen die mit Buchstaben beginnen)
+        grep -E '^[a-zA-Z]' requirements.txt > clean_requirements.txt
+        echo "Gereinigte requirements.txt:"
+        cat clean_requirements.txt
 
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip setuptools wheel
-        pip install -r filtered_requirements.txt pytest pytest-cov
+        python -m pip install --upgrade pip
+        pip install -r clean_requirements.txt pytest pytest-cov
+        echo "Installierte Pakete:"
+        pip list
 
-    - name: Run tests
+    - name: Run tests with coverage
       run: |
         python -m pytest \
           --cov=monitoring \
@@ -39,6 +43,7 @@ jobs:
           --maxfail=1
 
     - name: Upload coverage report
+      if: always()  # Hochladen auch bei Testfehlern
       uses: actions/upload-artifact@v4
       with:
         name: coverage-report
