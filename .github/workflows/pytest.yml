@@ -18,10 +18,16 @@ jobs:
       with:
         python-version: '3.12'
 
+    - name: Filter requirements.txt to remove invalid lines
+      run: |
+        # Filter out lines that don't look like valid package names
+        grep -vE '^\d{4}-\d{2}-\d{2}' requirements.txt > filtered_requirements.txt
+        cat filtered_requirements.txt  # Debugging: show the filtered contents
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip setuptools wheel
-        pip install -r requirements.txt pytest pytest-cov
+        pip install -r filtered_requirements.txt pytest pytest-cov
 
     - name: Run tests
       run: |
