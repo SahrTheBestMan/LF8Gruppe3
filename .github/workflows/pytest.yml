@@ -11,37 +11,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
-        python-version: 3.12
+        python-version: '3.12'
 
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip || true  # Verhindert Fehler, falls pip bereits auf dem neuesten Stand ist
-        # Filter out any lines that do not look like a valid requirement (e.g., lines with logs)
-        grep -v '^#' requirements.txt | grep -v '^[0-9]' > filtered_requirements.txt
-        cat filtered_requirements.txt  # Output filtered file to debug if needed
-        pip install -r filtered_requirements.txt
+        python -m pip install --upgrade pip setuptools wheel
+        pip install -r requirements.txt pytest pytest-cov
 
-    - name: Install pytest manually if not installed
+    - name: Run tests
       run: |
-        python -m pip install pytest
+        python -m pytest \
+          --cov=monitoring \
+          --cov-report=html \
+          --cov-report=term \
+          -v \
+          --maxfail=1
 
-    - name: Run tests with coverage
-      run: |
-        python -m pytest --cov=monitoring --cov-report=html --maxfail=1 --disable-warnings -v
-
-    - name: Check if htmlcov directory exists
-      run: |
-        if [ ! -d "htmlcov" ]; then
-          echo "htmlcov directory does not exist!"
-          exit 1
-        fi
-
-    - name: List contents of htmlcov directory
-      run: |
-        ls -lR htmlcov
+    - name: Upload coverage report
+      uses: actions/upload-artifact@v4
+      with:
+        name: coverage-report
+        path: htmlcov/
