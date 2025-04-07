@@ -40,7 +40,7 @@ jobs:
         ls -lR htmlcov
 
     - name: Upload Coverage Report
-      uses: actions/upload-artifact@v2  # Wechsel auf v2
+      uses: actions/upload-artifact@v3  # Wechsel zurück zu v3
       with:
         name: html-coverage-report
         path: htmlcov/
