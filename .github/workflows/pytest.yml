@@ -38,9 +38,3 @@ jobs:
     - name: List contents of htmlcov directory
       run: |
         ls -lR htmlcov
-
-    - name: Upload Coverage Report
-      uses: actions/upload-artifact@v2  # Wechsel auf v2
-      with:
-        name: html-coverage-report
-        path: htmlcov/
