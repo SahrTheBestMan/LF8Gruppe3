@@ -1,3 +1,6 @@
+requests==2.28.1
+pytest==7.1.2
+pytest-cov==3.0.0
 2025-04-03 12:12:58 | CPU: 14.0% | RAM: 59.6% | Festplatte: 61.2%
 2025-04-03 12:13:55 | CPU: 3.1% | RAM: 60.0% | Festplatte: 61.2%
 2025-04-03 12:16:28 | CPU: 6.9% | RAM: 59.9% | Festplatte: 61.2%
