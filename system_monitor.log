@@ -26,3 +26,5 @@
 2025-04-07 11:18:47,973 - ERROR - E-Mail Fehler: [WinError 10060] Ein Verbindungsversuch ist fehlgeschlagen, da die Gegenstelle nach einer bestimmten Zeitspanne nicht richtig reagiert hat, oder die hergestellte Verbindung war fehlerhaft, da der verbundene Host nicht reagiert hat
 2025-04-07 12:07:15,883 - INFO - E-Mail gesendet: Warnung: Festplatte >61%
 2025-04-07 12:12:52,199 - INFO - E-Mail gesendet: Warnung: Festplatte >61%
+2025-04-08 12:18:16,553 - INFO - E-Mail gesendet: Warnung: Festplatte >61%
+2025-04-08 12:18:59,448 - INFO - E-Mail gesendet: Warnung: Festplatte >61%
