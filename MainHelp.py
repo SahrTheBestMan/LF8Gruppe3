@@ -1,37 +1,32 @@
-import subprocess, sys
+import subprocess
+import sys
 
 def menu():
-    print("\nSystem Monitoring")
-    print("1 - CPU | 2 - RAM | 3 - Festplatte | all - Alle | C - Beenden")
+    print("\nSystem Monitoring\n1 - CPU | 2 - RAM | 3 - Festplatte | all - Alle | C - Beenden")
 
 def run(choice):
+    mapping = {'1': 'CPU:', '2': 'RAM:', '3': 'Festplatte:'}
     if choice == 'all':
-        choice = '123'
-    if not all(c in '123' for c in choice):
+        filters = list(mapping.values())
+    elif all(c in mapping for c in choice):
+        filters = [mapping[c] for c in choice]
+    else:
         print("Ungültige Eingabe!")
         return
 
-    tags = {'1': 'CPU:', '2': 'RAM:', '3': 'Festplatte:'}
-    # Erzeuge einen Filter-String wie "CPU:|RAM:"
-    filters = [tags[c] for c in choice]
-    pattern = "|".join(filters)
-
+    cmd = [sys.executable, "main.py"]
     if sys.platform == 'win32':
-        # Windows: findstr akzeptiert mehrere Begriffe mit /C: pro Begriff
-        findstr_args = []
-        for f in filters:
-            findstr_args += ["/C:" + f]
-        proc = subprocess.Popen([sys.executable, "main.py"], stdout=subprocess.PIPE)
-        proc.wait()  # Warten auf den Abschluss von main.py
-        result = subprocess.run(["findstr"] + findstr_args, stdin=proc.stdout)
-        proc.stdout.close()
+        with subprocess.Popen(cmd, stdout=subprocess.PIPE, text=True) as proc:
+            for line in proc.stdout:
+                if any(f in line for f in filters):
+                    print(line.strip())
     else:
-        # Unix/macOS: grep -E "CPU:|RAM:"
-        cmd = f'{sys.executable} main.py | grep -E "{pattern}"'
-        result = subprocess.run(cmd, shell=True)
-
-    if result.returncode != 0:
-        print("Keine passenden Werte gefunden.")
+        grep_cmd = ["grep", "-E", "|".join(filters)]
+        p1 = subprocess.Popen(cmd, stdout=subprocess.PIPE)
+        p2 = subprocess.Popen(grep_cmd, stdin=p1.stdout, stdout=subprocess.PIPE, text=True)
+        p1.stdout.close()
+        for line in p2.stdout:
+            print(line.strip())
 
 while True:
     menu()

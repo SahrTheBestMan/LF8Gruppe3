@@ -147,3 +147,8 @@
 2025-04-09 14:17:27,178 - INFO - E-Mail gesendet: ALARM: Festplatte >80%
 2025-04-09 14:18:13,136 - INFO - E-Mail gesendet: ALARM: Festplatte >80%
 2025-04-09 14:42:12,941 - INFO - E-Mail gesendet: ALARM: Festplatte >80%
+2025-04-09 19:37:17,162 - ERROR - E-Mail Fehler: {'lf8gruppe3@gmail.com': (450, b'Requested mail action not taken: mailbox unavailable\nFailure sending mail. Try again later\n1M2O2Q-1u38OB3zDC-0044If')}
+2025-04-09 19:37:27,604 - ERROR - E-Mail Fehler: {'lf8gruppe3@gmail.com': (450, b'Requested mail action not taken: mailbox unavailable\nFailure sending mail. Try again later\n1MQvD5-1tfFqp1gZz-00O4yz')}
+2025-04-09 19:37:31,123 - ERROR - E-Mail Fehler: {'lf8gruppe3@gmail.com': (450, b'Requested mail action not taken: mailbox unavailable\nFailure sending mail. Try again later\n1MCKBm-1ttBiD3rpC-009aeu')}
+2025-04-09 19:37:35,527 - ERROR - E-Mail Fehler: {'lf8gruppe3@gmail.com': (450, b'Requested mail action not taken: mailbox unavailable\nFailure sending mail. Try again later\n1MJVDM-1tnFPM1MnQ-00Jweu')}
+2025-04-09 19:38:41,818 - ERROR - E-Mail Fehler: {'lf8gruppe3@gmail.com': (450, b'Requested mail action not taken: mailbox unavailable\nFailure sending mail. Try again later\n1MxlzC-1t7qu42ZME-00z4yT')}
