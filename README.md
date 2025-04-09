@@ -6,6 +6,10 @@ Code für Testübersicht: https://file:///C:/LF8/LF8Gruppe3/htmlcov/index.html
 # Scrumrollen
 Product Owner: Behnaz Jokar   Scrum Master: Flynn Wippermann   Development: Sahr Qasm
 
+# Sequenzdiagramm
+
+LINK
+
 # Unterschiede zwischen Open-Source- und proprietären Softwarelösungen
 
 ## Open-Source-Software
