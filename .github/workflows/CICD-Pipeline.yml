@@ -31,7 +31,7 @@ jobs:
       - name: Check Code Style using Black
         run: |
           export PYTHONPATH=$(pwd)/Umgebung
-          black --check --diff Umgebung || true
+          black --check --diff . || true
 
 
       - name: Run Pylint
