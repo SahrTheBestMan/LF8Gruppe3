@@ -31,7 +31,7 @@ jobs:
       - name: Check Code Style using Black
         run: |
           export PYTHONPATH=$(pwd)/Umgebung
-          black --check --diff . || true
+          black --check --diff main.py MainHelp.py monitoring/alert.py monitoring/cpu_monitor.py monitoring/ram_monitor.py tests/integration/test_full_flow.py tests/unit/test_cpu_monitor.py || true
 
 
       - name: Run Pylint
