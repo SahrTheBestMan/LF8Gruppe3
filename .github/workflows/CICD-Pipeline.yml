@@ -30,10 +30,10 @@ jobs:
 
       - name: Run Pylint
         run: |
-          export PYTHONPATH=$(pwd)/Umgebung:$(pwd)
-          pylint $(pwd)/Umgebung/monitor_module.py || true
-          pylint $(pwd)/Umgebung/alert_module.py || true
-          pylint $(pwd)/Umgebung/def_function.py || true
+                export PYTHONPATH=$(pwd)
+                pylint $(pwd)/main.py
+                pylint $(pwd)/MainHelp.py
+                pylint $(pwd)/monitoring
 
       - name: Run mypy (Static Type Checking)
         run: |
