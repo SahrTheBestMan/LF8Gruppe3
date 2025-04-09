@@ -28,6 +28,12 @@ jobs:
         run: pip install types-psutil
 
 
+      - name: Check Code Style using Black
+        run: |
+          export PYTHONPATH=$(pwd)/Umgebung
+          black --check --diff || true
+
+
       - name: Run Pylint
         run: |
                 export PYTHONPATH=$(pwd)
