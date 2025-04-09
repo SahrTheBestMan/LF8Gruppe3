@@ -152,3 +152,6 @@
 2025-04-09 19:37:31,123 - ERROR - E-Mail Fehler: {'lf8gruppe3@gmail.com': (450, b'Requested mail action not taken: mailbox unavailable\nFailure sending mail. Try again later\n1MCKBm-1ttBiD3rpC-009aeu')}
 2025-04-09 19:37:35,527 - ERROR - E-Mail Fehler: {'lf8gruppe3@gmail.com': (450, b'Requested mail action not taken: mailbox unavailable\nFailure sending mail. Try again later\n1MJVDM-1tnFPM1MnQ-00Jweu')}
 2025-04-09 19:38:41,818 - ERROR - E-Mail Fehler: {'lf8gruppe3@gmail.com': (450, b'Requested mail action not taken: mailbox unavailable\nFailure sending mail. Try again later\n1MxlzC-1t7qu42ZME-00z4yT')}
+2025-04-09 19:39:36,754 - ERROR - E-Mail Fehler: {'lf8gruppe3@gmail.com': (450, b'Requested mail action not taken: mailbox unavailable\nFailure sending mail. Try again later\n1Ml6m4-1tLVsz2JtU-00lPdb')}
+2025-04-09 19:43:43,381 - ERROR - E-Mail Fehler: {'sahrqasm1999@gmail.com': (450, b'Requested mail action not taken: mailbox unavailable\nFailure sending mail. Try again later\n1M3lcJ-1u2ITr0l5H-0011xy')}
+2025-04-09 19:50:34,186 - INFO - E-Mail gesendet: Warnung: Festplatte >61%

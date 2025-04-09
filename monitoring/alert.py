@@ -12,7 +12,7 @@ logging.basicConfig(
 
 def send_alert(subject, message):
     """Sendet E-Mail mit deinen Zugangsdaten"""
-    sender_email = "lf8gruppe3@gmx.de"
+    sender_email = "lf8gruppe03@gmx.de"
     receiver_email = "lf8gruppe3@gmail.com"
     password = "hallosahr123"
     
