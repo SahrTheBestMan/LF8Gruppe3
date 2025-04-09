@@ -1,10 +1,11 @@
-Code für Testübersicht: https://file:///C:/LF8/LF8Gruppe3/htmlcov/index.html
-
-
 # Lernfeld 08 Gruppe 3
 
 # Scrumrollen
-Product Owner: Behnaz Jokar   Scrum Master: Flynn Wippermann   Development: Sahr Qasm
+Product Owner: Behnaz Jokar          Scrum Master: Flynn Wippermann          Development: Sahr Qasm
+
+# SCRUM-Board:
+
+Trello: https://trello.com/invite/b/67e9839bba919322da7b4246/ATTIea78edb5f9a82f40d03932c3db3d73546015C0C0/lf-8
 
 # Sequenzdiagramm
 
@@ -24,15 +25,15 @@ LINK
 
 ---
 
-# Verwendete Infrastruktur und Lock-in-Effekte
+# Verwendete Infrastruktur und der Lock-in-Effekt
 
 ## Verwendete Technologien
 - GitHub: Plattform für Kollaboration.
 - Python: Programmiersprache für die Implementierung.
-- psutil: Abfrage von Systemressourcen.
-- Pytest, Pylint, MyPy: Testumgebung  für  Code- und Laufzeitfehler
+- Psutil: Abfrage von Systemressourcen.
+- Pytest, Pylint, MyPy: Testumgebung  für  Code- und Laufzeitfehler.
 
-## Lock-in-Effekte
+## Lock-in-Effekt
 Lock-in-Effekte treten auf, wenn Nutzer aufgrund von Abhängigkeiten Schwierigkeiten haben, zu Alternativen zu wechseln. Beispiele:
 - Abhängigkeit von spezifischen Python-Bibliotheken.
 - Einschränkungen durch geschlossene Plattformen.
@@ -62,3 +63,7 @@ Empfehlungen:
 - Private Haushalte: Nutzung von Open-Source-Alternativen wie LibreOffice.
 
 ---
+
+
+
+Code für Testübersicht: https://file:///C:/LF8/LF8Gruppe3/htmlcov/index.html
