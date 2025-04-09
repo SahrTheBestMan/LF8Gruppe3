@@ -22,9 +22,9 @@ def main():
     disk = get_disk_usage()
     
     # Ausgabe
-    print(f"🔸 CPU       : {cpu:.2f}%")
-    print(f"🔸 RAM       : {ram:.2f}%")
-    print(f"🔸 Festplatte: {disk:.2f}%")
+    print(f"CPU       : {cpu:.1f}%")
+    print(f"RAM       : {ram:.1f}%")
+    print(f"Festplatte: {disk:.1f}%")
 
     # Werte speichern
     save_results(cpu, ram, disk)
