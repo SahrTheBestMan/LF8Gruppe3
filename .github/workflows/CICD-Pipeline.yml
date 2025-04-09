@@ -1,0 +1,41 @@
+name: CICD-Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint_test_typecheck:
+    name: Run Linting, Tests and Type Checking
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python and install dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y python3 python3-pip
+          pip install -r requirements.txt || true
+          pip install pylint pytest mypy
+          pip install psutil  # Installiere psutil hier zusätzlich
+
+      - name: Install types-psutil
+        run: pip install types-psutil
+
+
+      - name: Run Pylint
+        run: |
+          export PYTHONPATH=$(pwd)/Umgebung:$(pwd)
+          pylint $(pwd)/Umgebung/monitor_module.py || true
+          pylint $(pwd)/Umgebung/alert_module.py || true
+          pylint $(pwd)/Umgebung/def_function.py || true
+
+      - name: Run mypy (Static Type Checking)
+        run: |
+          export PYTHONPATH=$(pwd)/Umgebung
+          mypy --exclude "Alte Umgebung" . || true
