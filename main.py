@@ -33,5 +33,8 @@ def main():
     check_threshold(ram, "RAM")
     check_threshold(disk, "Festplatte")  # Wird bei >61% warnen
 
+
 if __name__ == "__main__":
     main()
+
+print("Für weitere Hilfe bitte 'python mainHelp.py' eingeben.")
