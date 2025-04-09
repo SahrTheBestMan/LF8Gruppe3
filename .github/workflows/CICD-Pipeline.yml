@@ -10,7 +10,7 @@ on:
 
 jobs:
   lint_test_typecheck:
-    name: Run Linting, Tests and Type Checking
+    name: Run Tests and Qualitychecks
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
