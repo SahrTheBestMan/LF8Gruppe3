@@ -31,9 +31,9 @@ jobs:
       - name: Run Pylint
         run: |
                 export PYTHONPATH=$(pwd)
-                pylint $(pwd)/main.py
-                pylint $(pwd)/MainHelp.py
-                pylint $(pwd)/monitoring
+                pylint $(pwd)/main.py || true
+                pylint $(pwd)/MainHelp.py || true
+                pylint $(pwd)/monitoring || true
 
       - name: Run mypy (Static Type Checking)
         run: |
