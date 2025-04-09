@@ -20,6 +20,7 @@ def main():
     cpu = get_cpu_usage()
     ram = get_memory_usage()
     disk = get_disk_usage()
+    
     # Ausgabe
     print(f"🔸 CPU       : {cpu:.2f}%")
     print(f"🔸 RAM       : {ram:.2f}%")
