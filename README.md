@@ -9,7 +9,8 @@ Trello: https://trello.com/invite/b/67e9839bba919322da7b4246/ATTIea78edb5f9a82f4
 
 # Sequenzdiagramm
 
-LINK
+![cdn-0 plantuml](https://github.com/user-attachments/assets/fa812dc5-4144-41b6-866d-76bed3a7d86a)
+
 
 # Unterschiede zwischen Open-Source- und proprietären Softwarelösungen
 
